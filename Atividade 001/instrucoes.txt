@@ -1,0 +1,40 @@
+# Instrucoes de Compilacao e Execucao
+
+## 1. Compilacao do Programa
+Para compilar o programa em C, utilize o seguinte comando no terminal:
+
+gcc main.c -o main
+
+Isso criará um executável chamado `main`.
+
+## 2. Estrutura de Diretórios
+Antes de executar o programa, certifique-se de que os diretórios necessários estão criados. Se eles não existirem, crie-os com:
+
+mkdir -p senhas senhas_decriptografadas
+
+Os arquivos de entrada devem estar no diretório `senhas/`, nomeados como `001.txt`, `002.txt`, ..., `010.txt`.
+
+## 3. Execução do Programa
+Execute o programa com:
+
+./main
+
+Isso iniciará a execução, criando 10 processos para processar os arquivos de senhas.
+
+## 4. Resultados
+Após a execução, os arquivos descriptografados estarão em `senhas_decriptografadas/` com os mesmos nomes dos arquivos de entrada.
+
+## 5. Exemplo de Arquivo de Entrada
+Cada arquivo dentro da pasta `senhas/` deve conter senhas criptografadas, uma por linha. Exemplo:
+
+DFGI
+XKPL
+OMHR
+
+## 6. Exemplo de Saída
+O programa gerará arquivos correspondentes na pasta `senhas_decriptografadas/`, contendo as senhas quebradas, como:
+
+AAAA
+BBBB
+CCCC
+
